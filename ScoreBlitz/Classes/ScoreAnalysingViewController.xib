@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreAnalysingViewController">
+            <connections>
+                <outlet property="cancelButton" destination="6qy-aO-TWd" id="RVi-jK-Etm"/>
+                <outlet property="progressLabel" destination="9ED-mL-DdJ" id="drh-20-WrL"/>
+                <outlet property="progressView" destination="nou-zq-wt9" id="Gzp-b8-6hP"/>
+                <outlet property="scoreNameLabel" destination="LJR-nW-plZ" id="3BB-wL-KlM"/>
+                <outlet property="titleLabel" destination="wfJ-Fh-Sjk" id="O3p-0c-Gbr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qy-aO-TWd">
+                    <rect key="frame" x="8" y="248" width="384" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SoK-gC-Li0"/>
+                    </constraints>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelTapped:" destination="-1" eventType="touchUpInside" id="Sgg-DX-lCr"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1wk-WC-z06">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFQ-fW-siC">
+                            <rect key="frame" x="8" y="74" width="384" height="92"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfJ-Fh-Sjk" userLabel="Label - Title">
+                                    <rect key="frame" x="0.0" y="0.0" width="384" height="22"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJR-nW-plZ" userLabel="Label - Score">
+                                    <rect key="frame" x="0.0" y="30" width="384" height="22"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="nou-zq-wt9">
+                                    <rect key="frame" x="8" y="60" width="376" height="2"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="2" id="Ov9-pp-3qL"/>
+                                    </constraints>
+                                </progressView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ED-mL-DdJ" userLabel="Label - Progress">
+                                    <rect key="frame" x="0.0" y="70" width="384" height="22"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="wfJ-Fh-Sjk" secondAttribute="trailing" id="28a-Mq-9Gx"/>
+                                <constraint firstItem="nou-zq-wt9" firstAttribute="leading" secondItem="tFQ-fW-siC" secondAttribute="leading" constant="8" id="80F-W1-3dL"/>
+                                <constraint firstItem="9ED-mL-DdJ" firstAttribute="top" secondItem="nou-zq-wt9" secondAttribute="bottom" constant="8" id="9Sh-tc-Rsn"/>
+                                <constraint firstItem="9ED-mL-DdJ" firstAttribute="leading" secondItem="tFQ-fW-siC" secondAttribute="leading" id="GAU-Vr-n6j"/>
+                                <constraint firstItem="nou-zq-wt9" firstAttribute="top" secondItem="LJR-nW-plZ" secondAttribute="bottom" constant="8" id="HLR-r3-l5u"/>
+                                <constraint firstAttribute="trailing" secondItem="9ED-mL-DdJ" secondAttribute="trailing" id="Xgv-3N-SfM"/>
+                                <constraint firstItem="LJR-nW-plZ" firstAttribute="top" secondItem="wfJ-Fh-Sjk" secondAttribute="bottom" constant="8" id="eJs-A0-OLA"/>
+                                <constraint firstAttribute="trailing" secondItem="LJR-nW-plZ" secondAttribute="trailing" id="hcT-Ck-bKS"/>
+                                <constraint firstAttribute="trailing" secondItem="nou-zq-wt9" secondAttribute="trailing" id="jVx-R7-Btq"/>
+                                <constraint firstItem="wfJ-Fh-Sjk" firstAttribute="leading" secondItem="tFQ-fW-siC" secondAttribute="leading" id="lYf-GA-hDc"/>
+                                <constraint firstAttribute="bottom" secondItem="9ED-mL-DdJ" secondAttribute="bottom" id="mck-Rl-OUV"/>
+                                <constraint firstItem="wfJ-Fh-Sjk" firstAttribute="top" secondItem="tFQ-fW-siC" secondAttribute="top" id="smA-UH-yNe"/>
+                                <constraint firstItem="LJR-nW-plZ" firstAttribute="leading" secondItem="tFQ-fW-siC" secondAttribute="leading" id="zbX-3R-VBE"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="tFQ-fW-siC" secondAttribute="centerY" id="4zh-sy-TZi"/>
+                        <constraint firstAttribute="trailing" secondItem="tFQ-fW-siC" secondAttribute="trailing" constant="8" id="cda-6t-aAg"/>
+                        <constraint firstItem="tFQ-fW-siC" firstAttribute="leading" secondItem="1wk-WC-z06" secondAttribute="leading" constant="8" id="vQx-yR-Ke0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1wk-WC-z06" secondAttribute="trailing" id="9m3-u5-LIp"/>
+                <constraint firstItem="6qy-aO-TWd" firstAttribute="top" secondItem="1wk-WC-z06" secondAttribute="bottom" constant="8" id="Ibp-qv-gp8"/>
+                <constraint firstAttribute="bottom" secondItem="6qy-aO-TWd" secondAttribute="bottom" constant="8" id="R42-xy-Ba1"/>
+                <constraint firstItem="1wk-WC-z06" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W05-hn-tSz"/>
+                <constraint firstItem="1wk-WC-z06" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aMD-uU-dPN"/>
+                <constraint firstItem="6qy-aO-TWd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="u73-Fd-Equ"/>
+                <constraint firstAttribute="trailing" secondItem="6qy-aO-TWd" secondAttribute="trailing" constant="8" id="uTP-Hf-iWy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="518" y="475"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

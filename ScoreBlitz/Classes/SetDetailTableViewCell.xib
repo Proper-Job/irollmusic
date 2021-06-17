@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SetDetailTableViewCell" rowHeight="65" id="KGk-i7-Jjw" customClass="SetDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akh-5O-UWW">
+                        <rect key="frame" x="20" y="36" width="344" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="htC-DS-HM0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apm-3v-vaT">
+                        <rect key="frame" x="20" y="8" width="344" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ktm-GG-YcL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Akh-5O-UWW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2Mp-ax-XBY"/>
+                    <constraint firstItem="Apm-3v-vaT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3FO-M8-T7H"/>
+                    <constraint firstAttribute="trailing" secondItem="Apm-3v-vaT" secondAttribute="trailing" constant="20" id="9if-Rp-LKW"/>
+                    <constraint firstItem="Akh-5O-UWW" firstAttribute="top" secondItem="Apm-3v-vaT" secondAttribute="bottom" constant="8" id="epF-mG-uR3"/>
+                    <constraint firstItem="Apm-3v-vaT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="k2U-Z8-B4A"/>
+                    <constraint firstAttribute="trailing" secondItem="Akh-5O-UWW" secondAttribute="trailing" constant="20" id="tKl-Wh-lhm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="playtimeLabel" destination="Akh-5O-UWW" id="u2J-Lc-aRO"/>
+                <outlet property="scoreTitleLabel" destination="Apm-3v-vaT" id="hnI-KA-CdU"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,451 @@
+/* 
+ Localizable.strings
+ ScoreBlitz
+ 
+ Created by Moritz Pfeiffer on 01.02.11.
+ Copyright 2011 Moritz Pfeiffer. All rights reserved.
+ */
+
+/******************************************
+ * iRate
+ ******************************************/
+
+"rateAlertViewTitle" = "Évalue l´App s´il te plaît";							
+"rateAlertViewMessage" = "Si iRollMusic te plaît, écris un commentaire";			
+"rateAlertViewCancelButton" = "Non merci"; 										
+"rateAlertViewOkButton" = "Évaluer l´App";										
+"rateAlertViewRemindButton" = "Rappeler plus trad";								
+
+/******************************************
+ * Facebook
+ ******************************************/
+
+"facebookNameString" = "iRollMusic";
+"facebookCaptionString" = "Utilise ton iPad comme pupitre digital!";			
+"facebookDescriptionString" = "iRollMusic est une App formidable avec laquelle tu peux enfin jouer les mains libres tes partitions digitalisées. iRollMusic tourne les pages pour toi. Avec iRollMusic tu as toujours tes partitions toujours avec toi et tu peux faire à tout moment avec tes amis une séance du tonnerre.";	
+
+/******************************************
+ * CentralView
+ ******************************************/
+
+"centralViewLeftLabelScores" = "partitions";				
+"centralViewLeftLabelSets" = "plage musicale";				
+"centralViewLibraryButton" = "collection des partitions";	
+"centralViewTutorialsButton" = "tutoriaux";					
+"centralViewSettingsbutton" = "paramètres";					
+
+"centralViewNewSetName" = "+ nouvelle liste";				
+
+/******************************************
+ * Performance View
+ ******************************************/
+
+"currentPageIndicator" = "%d de %d";						
+
+"advancedPerformanceMode" = "par mesure";
+"simplePerformanceMode" = "simple";				
+"pagingPerformanceMode" = "manuel";							
+
+"finishedPerformance" = "Défilement terminé";					
+"setPerformanceTempo" = "régler la vitesse";				
+"choosePerformanceModePopoverTitle" = "choisis le mode de la plage musicale";	
+"simpleScrollSpeedSelectorSpeedLabel" = "vitesse"; 			
+
+"showToolbarHelpViewText" = "touche l´écran avec 2 doits pour montrer la barre de menu";	
+"hideToolbarHelpViewText" = "touche l´écran avec 2 doits pour cacher la barre de menu";	
+
+"metronomeAudible" = "son";										
+"countInNumberOfBars" = "compter à l´avance";					
+"metronomeOptionsHeading" = "réglage du métronome";		
+
+/******************************************
+ * Editor
+ ******************************************/
+"editorTypeMeasures" = "mesures";								
+"editorTypeAnnotations" = "annotations";							
+"editorTypeStartMeasure" = "mesure de départ";						
+
+"editMeasure" = "modifier la mesure";						
+"multipleMeasurePropertyValues" = "Diverses valeurs\nChanger toutes.";			
+"editMultipleMeasure" = "modifier les mesures";				
+"deleteMarkers" = "supprimer tout les marquages";					
+"deleteMarker" = "supprimer le marquage";							
+
+"pressForMoreOptions" = "montrer plus d´options";					
+"pressForLessOptions" = "cacher les options";						
+
+"daCapo" = "D.C.";
+
+// Labels
+"primaryEndingLabel" = "1ère fin";										
+"secondaryEndingLabel" = "2ème fin";									
+
+// AnnotationsView
+"drawAnnotationsButton" = "dessiner";										
+"typeAnnotationsButton" = "écrire";											
+"eraseAnnotationsButton" = "gommer";										
+"clearAnnotationsButton" = "supprimer";										
+"penAnnotationsButton" = "crayon";											
+
+"redColorName" = "rouge";													
+"blueColorName" ="bleu";													
+"greenColorName" = "vert";													
+"purpleColorName" = "violet";											
+"markerColorName" = "marqueur";												
+"blackColorName" = "noir";													
+"whiteColorName" = "blanc";													
+"penLineWidth" = "largeur du crayon";										
+
+
+"confirmClearPageTitle" = "Supprimer toute les remarques pour cette page?";		
+
+"startMeasurePickerPrompt" = "choisis la mesure de départ";	
+"editorTitlePrompt" = "Toucher pour placer des marquages de mesure\nTouche le marquage pour modifier les paramètres";	
+
+"measureEditorTimeSignature" = "signature temps";							
+"measureEditorTempo" = "battement par minute";								
+"measureEditorStartRepeat" = "début de réprise";							
+"measureEditorEndRepeat" = "fin de réprise";								
+"measureEditorNumberOfPasses" = "nombre de passage";						
+"measureEditorGoToCoda" = "vers la Coda";									
+/******************************************
+ * Library View
+ ******************************************/
+
+
+// Toolbar items
+"libraryModelTypeScores" = "partitions";										
+"libraryModelTypeSets" = "plages musicales";									
+
+// Alertview for add Set
+"libraryAddSetListTitle" = "nouvelle liste";								
+"libraryAddSetListTitleMessage" = "Entre un titre pour la liste s´il te plaît:";		
+
+// Alertview for confirm deletes
+"confirmDeleteScoreTitle" = "Vraiment supprimer la partition?";				
+"confirmDeleteSetTitle" = "Vraiment supprimer la liste";					
+
+// Tableviews
+"tableViewCellPlayTime" = "durée";										
+"tableViewCellPlayTimeNotAvailableString" = "pas de précisions";			
+"tableViewNoSetMessage" = "Ajoute une plage musciale s´il te plaît";		
+"noEntryLabelTitle" = "pas d´entrée";										
+
+// ProgressIndicator
+"analysingProgress" = "la partition est entrain d´être analysée";			
+
+// Score Details Labels
+"scoreDetailNameLabel" = "nom";												
+"scoreDetailComposerLabel" = "compositeur";									
+"scoreDetailGenreLabel" = "genre";											
+"scoreDetailPlaytimeLabel" = "durée";									
+"scoreDetailMinLabel" = "minutes";											
+"scoreDetailSecLabel" = "secondes";											
+"noPictureLabel" = "pas d´image d´aperçu";									
+"scoreDetailAutomaticCalculationLabel" = "calcul automatique";			
+
+// List descriptions
+"scoreNamePlural" = "partitions";											
+"setNamePlural" = "plages musicales";										
+
+"setName" = "liste";														
+
+/******************************************
+ * Score Manager
+ ******************************************/
+
+// Alertview for max scores reached
+"maxScoresReachedAlertViewTitle" = "le nombre maximal de partitions est atteint";		
+"maxScoresReachedAlertViewMessageImport" = "Tu as atteint la limite de %d de partitions de la version Lite de iRollMusic. De ce fait ton fichier n´a malheureusement pas pu être importé.\nPour acheter la version complète sans restriction de iRollMusic appuie sur le bouton OK.";										
+"maxScoresReachedAlertViewMessageDocumentsFolder" = "Tu as atteint la limite de %d de partitions de la version Lite de iRollMusic. De ce fait les fichiers de ton dossier documents n´ont pas pu être importer entièrement.\nPour acheter la version complète sans restriction de iRollMusic appuie sûr le bouton OK.";		
+
+// Alertview for corrupt pdf files
+"corruptPdfFileAlertViewTitle" = "Le fichier PDF comporte des erreurs.";			
+"corruptPdfFileAlertViewMessage" = "Le fichier PDF à importer comporte des erreurs. Malheureusement l´import a du être annulé.";		
+
+/******************************************
+ * Settings View
+ ******************************************/
+
+"simpleModeScrollsContinuously" = "défilement continu";			
+"showHelpers" = "montrer le service d´aide";					
+"settingEnablePagingTapZones" = "mettre en marche les surfaces actives";		
+"settingFlashPagingPageIndicator" = "insérer le numéro de page quand une surface active a été touchée";		
+
+// Headings
+"settingsHeadingGeneralSettings" = "général";				
+
+"settingsScrollPositions" = "position de défilement";		
+"settingsScrollPositionAutomatic" = "auto";					
+"settingsScrollPositionTop" = "en haut";				
+"settingsScrollPositionMiddle" = "au milieu";				
+"settingsScrollPositionBottom" = "en bas";					
+
+
+/******************************************
+ * About View
+ ******************************************/
+
+"visualSupportLabel" = "design";							
+
+"feedbackDefaultMessage" = "écris nous un message";			
+"feedBackThankYouMessage" = "Ton message a été transferé avec succès. Merci beaucoup pour ta participation.";		
+"feedBackSubmitFailedMessage" = "Malheureusement une erreur de connection est apparue. Ton message a été enregistré ultérieurement. S´il te plaît essaye de l´envoyer à nouveau plus tard.";		
+
+"feedbackButtonTitle" = "evoyer le message";	
+
+"facebookButtonTitle" = "coller à ton mur";		
+
+"aboutUsDescriptiveText" = "Merci d´avoir acheter iRollMusic.\nNous nous intéressons beaucoup à tes avis et suggestions. Envoie- nous un message s´il te plaît.";		
+
+"aboutUsDescriptiveTextLite" = "Merci beaucoup pour l´utilisation d´iRollMusic. La seule restriction de cette version est la limitation à %d de partitions. Achète-toi la version complète pour pouvoir utiliser iRollMusic sans restrictions.\nNous nous intéressons beaucoup à tes avis, suggestions et critiques. Envoie- nous un message s´il te plaît.";		
+
+/******************************************
+ * DropBox View
+ ******************************************/
+
+"dropboxSegmentTitle" = "Dropbox";									
+"iRollMusicSegmentTitle" = "iRollmusic";							
+
+"transferButtonStartTitle" = "démarrer le transfert";				
+"transferButtonCancelTitle" = "annuler le transfert";				
+"clearTransferListButtonTitle" = "supprimer la liste";				
+
+"fileListLabelTextForDropBox" = "fichiers dans ta Dropbox";			
+"fileListLabelTextForIrollmusic" = "partitions dans iRollMusic";	
+"transferListLabelText" = "fichiers pour transfert";					
+
+
+"transferToDropboxHeader" = "de iRollMusic à Dropbox";			
+"transferToIrollMusicHeader" = "de Dropbox à iRollMusic";		
+
+"transferListOutboundCellIrmText" = "Irm";						
+"transferListOutboundCellPdfText" = "Pdf";						
+
+"clearTranferListAlertViewTitle" = "supprimer la liste de transferts";			
+"clearTranferListAlertViewMessage" = "Tous les transferts vont être annulés. Annuler vraiment la liste de transferts?";	
+
+"confirmDeleteFromDropboxAlertViewTitle" = "supprimer de Dropbox";		
+"confirmDeleteFromDropboxAlertViewMessage" = "supprimer vraiment le fichier de ton dossier iRollMusic de la Dropbox?";		
+
+"transferCanceledText" = "le transfert a été annulé";		
+"transferFailedText" = "le transfert a échoué";				
+
+/******************************************
+ * ImportViewController
+ ******************************************/
+
+"importViewTitleLabelTextStarted" = "la partition est en train d´être analysée";		
+"importViewTitleLabelTextFinished" = "la partion a été analysée avec succès";		
+"importViewShowScoreInLibraryButton" = "montrer dans la collection de partitions";	
+"importViewContinueButton" = "ok";												
+"progressPageCountFormatString" = "page %d de %d";									
+"progressPageCountFormatStringShort" = "%d de %d";									
+"progressCancelledText" = "annuler ...";										
+
+/******************************************
+ * ExportDialogPopOverViewController
+ ******************************************/
+
+"exportOptionsTitle" = "options d´export";									
+
+"fileExportTitle" = "exporter le fichier";									
+"exportDialogPdfAnnotationsSelector" = "remarques";							
+"exportDialogPdfFileButton" = "exporter en format PDF";					
+"exportDialogProprietaryFileButton" = "exporter en format iRollMusic";		
+
+"printerOptionsTitle" = "options pour imprimer";							
+"printDialogAnnotationsSelector" = "remarques";								
+"printDialogPrintModeSelector" = "format oblong";							
+"printDialogPrintButton" = "imprimer";										
+
+"dropboxAlertViewTitle" = "transfert de données de Dropbox";					
+"dropboxAlertViewMessage" = "Pendant l’actuel transfert de données entre Dropbox et iRollMusic aucunes autres partitions ne peuvent pas être exportées.";	
+
+"wrongVersionAlertViewTitle" = "Incompatible file version";
+"wrongVersionAlertViewMessage" = "You tried to import an IRM file which was created with a newer version of iRollMusic. Please update iRollMusic and start the import again.";
+"SendMailFailedAlertViewTitle" = "Email delivery failed";
+"SendMailFailedAlertViewMessage" = "The email could not be sent. Please try again.";
+
+/******************************************
+ * Buttons
+ ******************************************/
+
+"buttonOkay" = "ok";										
+"buttonCancel" = "annuler";									
+"buttonDelete" = "supprimer";								
+"buttonDone" = "terminer";								
+"buttonEdit" = "modifier";							
+"buttontapToSetTempo" = "donner le tempo à installer";									
+"buttonTapToPlay" = "démarrer";					
+
+// SetList
+"addSetList" = "ajouter la liste";						
+
+// Setlist Details
+
+"addSetListEntryButton" = "ajouter la partition";			
+"addSetListEntryButtonPressed" = "terminer";					
+
+
+"buttonScorePicker" = "partition";							
+"buttonChooseStartMeasure" = "mesure de départ";			
+
+/******************************************
+ * Scores
+ ******************************************/
+
+"untitledScore" = "innomé";									
+
+/******************************************
+ * Help Descriptions
+ ******************************************/
+"helpBarButtonTitle" = "?";													
+"helpViewControllerTutorialButton" = "video de training";
+
+// Paging
+"helpPagingPerformanceLeftTapZone" = "surface active gauche";		
+"helpPagingPerformanceRightTapZone" = "surface active droite";
+
+/******************************************
+ * Sign Annotations
+ ******************************************/
+"annotationCategoryArticulations" = "articulation";				
+"annotationCategoryDynamics" = "dynamique";						
+"annotationCategoryFingerings" = "doigtés";						
+"annotationCategoryOrnaments" = "ornements";					
+"signAnnotationModeSign" = "dessiner";							
+"signAnnotationModeColor" = "couleurs";
+"resetSizeButtonTitle" = "taille originale";
+
+/******************************************
+ * Tutorials
+ ******************************************/
+
+"tutorialDescriptionSimpleMode" = "Ici nous te montrons comment tu peux démarrer avec un \"défilement simple\".";				
+"tutorialDescriptionAdvancedMode" = "On te montre comment tu peux faire défiler tes mesures";									
+"tutorialDescriptionPagingMode" = "Tourner les pages avec iRollMusic. Aussi à ce jujet nous avons à te dire quelquechose.";		
+"tutorialTitleMeasureEditor" = "l´éditeur de mesures";		
+"tutorialDescriptionMeasureEditor" = "L´éditeur de mesures a beaucoup de fonctionalités. Nous te montrons comment tu peux t’en servir le plus facilement.";		
+"tutorialTitleAnnotationsEditor" = "l´éditeur de remarques";		
+"tutorialDescriptionAnnotationsEditor" = "Nous te montrons comment tu peux ajouter des remarques et des marquages à tes partitions.";		
+"tutorialTitleStartMeasureEditor" = "l´éditeur de mesure de départ";		
+"tutorialDescriptionStartMeasureEditor" = "Avec la fixation de la mesure de départ tu peux très bien étudier et apprendre des passages. Nous te montrons comment cela fonctionne.";		
+"tutorialTitleImport" = "import";		
+"tutorialDescriptionImport" = "Nous te montrons comment tu importes tes partitions à iRollMusic.";		
+
+/******************************************
+ * 1.4.4
+ ******************************************/
+"visualMetronome" = "optique";
+"settingRollByMeasureShowArrow" = "marquer la mesure actuelle avec une flèche";
+"analyzingAllScoresProgressViewTitle" = "Analyse de toutes les partitions";
+"powerSourceUnpluggedTitle" = "Important!";
+"powerSourceUnpluggedMessage" = "Votre iPad n’est pas branché au réseau électrique. Ce processus pourrait durer longtemps et décharger l’accumulateur complètement. Veuillez brancher votre iPad au réseau électrique avant de continuer";
+"buttonContinue" = "continuer";
+"buttonAnalyzeAllScores" = "analyser toutes les partitions";
+"lowBatteryAbortAnalyzingAlertTitle" = "L’analyse a été arrêtée!";
+"lowBatteryAbortAnalyzingAlertMessage" = "L’accumulateur est presque complètement déchargé. Veuillez brancher votre iPad au réseau électrique et recommencer le processus.";
+
+
+/******************************************
+ * Brach :: importexportupdate
+ ******************************************/
+"setListPdfRendererTimeString" = "Temps";
+"emailExportTitle" = "Export par Email";
+"setExportDialogAttachSetlistPdfButton" = "attacher la plage musicale comme fichier PDF";
+"setExportDialogAttachScoresPdfFilesButton" = "attacher toutes les partitions comme fichier PDF";
+"setExportDialogAttachIrmFileButton" = "attacher la plage musicale comme fichier IRM";
+"setExportDialogSendEmailButton" = "expédier l’Email";
+"setExportDialogPrintSetButton" = "imprimer la plage musicale";
+"exportDialogEmailToLargeTitle" = "Le fichier attaché est trop gros.";
+"exportDialogEmailToLargeMessage" = "Les fichiers attachés à l’Email dépassent 20 MB. C’est pourquoi l’Email ne peut malheureusement pas être expédié.";
+
+// Movie names
+"simplePerformanceModeTutorialMovie" = "https://youtu.be/eMCyz1BgXlA";
+"advancedPerformanceModeTutorialMovie" = "https://youtu.be/hsem1J2rLFU";
+"pagingPerformanceModeTutorialMovie" = "https://youtu.be/1PZM9c-UES0";
+"annotationsEditorTutorialMovie" = "https://youtu.be/0NlDhi_aoMs";
+"measureEditorTutorialMovie" = "https://youtu.be/DmPmCoKZkRU";
+"startMeasureEditorTutorialMovie" = "startMeasureEditor_en";
+"importTutorialMovie" = "https://youtu.be/4R_ONnv01MA";
+
+
+/******************************************
+ * Help templates
+ ******************************************/
+"mainPagingHelpTemplate" = "paging_main_fr";
+"mainAdvancedScrollHelpTemplate" = "advanced_scroll_main_fr";
+"mainSimpleScrollHelpTemplate" = "simple_scroll_main_fr";
+"barHelpTemplateMeasureEditor" = "bar_measure_editor_fr";
+"barHelpTemplateModePicker" = "bar_mode_picker_fr";
+"barHelpTemplateAnnotationEditor" = "bar_annotation_editor_fr";
+"barHelpTemplateSettings" = "bar_settings_fr";
+"barHelpTemplateScorePicker" = "bar_score_picker_fr";
+"barHelpTemplatePreviousPage" = "bar_previous_page_fr";
+"barHelpTemplatePagePicker" = "bar_page_picker_fr";
+"barHelpTemplateNextPage" = "bar_next_page_fr";
+"barHelpTemplateTempoPicker" = "bar_tempo_picker_fr";
+"barHelpTemplateStartMeasure" = "bar_start_measure_fr";
+"barHelpTemplateAdvancedRewind" = "bar_advanced_rewind_fr";
+"barHelpTemplateStop" = "bar_stop_fr";
+"barHelpTemplateAdvancedPlay" = "bar_advanced_play_fr";
+"barHelpTemplateSimpleRewind" = "bar_simple_rewind_fr";
+"barHelpTemplateSimplePlay" = "bar_simple_play_fr";
+"popoverHelpTemplateBpm" = "measure_editor_bpm_fr";
+"barHelpTemplateEditorPicker" = "bar_editor_type_picker_fr";
+"barHelpTemplateAnnotationTools" = "bar_annotation_tools_fr";
+"barHelpTemplatePenAnnotation" = "bar_pen_annotation_fr";
+"barHelpTemplateDeleteAnnotations" = "bar_delete_annotations_fr";
+"mainAnnotationEditorHelpTemplate" = "annotation_editor_main_fr";
+"mainMeasureEditorHelpTemplate" = "measure_editor_main_fr";
+"mainStartMeasureEditorHelpTemplate" = "start_measure_editor_main_fr";
+"popoverHelpTemplateSignAnnotations" = "sign_annotation_fr";
+"barHelpTemplateEnterMeasurePrompt" = "bar_enter_measure_prompt_fr";
+"popoverHelpTemplatePlaytimeCalc" = "automatic_playtime_calc_fr";
+
+/******************************************
+ * V 2.0
+ ******************************************/
+
+"MultipleScoresAnalysingProgressMessage" = "Analyse des partitions...";
+
+"FoundNewScoresAlertControllerTitle" = "fichiers trouvés";
+"FoundNewScoresAlertControllerMessage" = "iRollMusic a trouvé des fichiers dans le répertoire iTunes. Importer ces fichiers maintenant?";
+
+"ScoreActionTableViewControllerTitle" = "Activités";
+"ScoreActionSectionTitleImport" = "Importer";
+"CheckDocumentsDirectoryItemTitle" = "Explorer le répertoire iTunes";
+"ScoreActionSectionTitleScores" = "Partitions";
+"DeleteAllScoresItemTitle" = "Supprimer toutes les partitions";
+"ScoreActionSectionTitleDropbox" = "Dropbox";
+"LinkDropboxItemTitle" = "Se connecter au compte Dropbox";
+"UnlinkDropboxItemTitle" = "Se déconnecter du compte Dropbox";
+
+"DeleteAllScoresAlertControllerTitle" = "Supprimer toutes les partitions";
+"DeleteAllScoresAlertControllerMessage" = "Activité irreversible!\n\nSupprimer définitivement toutes les partitions?";
+
+"ImportViewControllerSuccessMessage" = "Importation réussie";
+"ImportViewControllerFailureMessage" = "Une erreur s'est manifestée";
+
+"ScoreRotationTitleMessage" = "Rotation de la partition";
+"ScoreRotationFailedMessage" = "Rotation échouée";
+
+"back" = "Retourner";
+
+"NewAboutUsDescriptiveText" = "Merci beaucoup d'avoir utilisé iRollMusic.\n\nOn s'intéresse beaucoup aux suggestions des clients - envoyez nous un message.\n\nVisitez notre site internet: www.irollmusic.com.";
+
+"ShopViewControllerTitle" = "Boutique";
+"ShopRestorePurchasesButtonTitle" = "Reconstituer les achats";
+"12monthIapItemTitle" = "iRollMusic Pro: 12 mois\nUtilisation illimitée";
+"6monthIapItemTitle" = "iRollMusic Pro: 6 mois\nUtilisation illimitée";
+"3monthIapItemTitle" = "iRollMusic Pro: 3 mois\nUtilisation illimitée";
+"1monthIapItemTitle" = "iRollMusic Pro: 1 mois\nUtilisation illimitée";
+"ShopManageSubscriptionsButtonTitle" = "Gérer les abonnements";
+"ShopViewControllerValidSubscriptionMessage" = "iRollMusic Pro abonné jusqu'au %@";
+
+
+// Alertview for max scores reached
+"maxScoresReachedAlertViewTitle" = "Nombre maximal de partitions atteint";
+"maxScoresReachedAlertViewMessageImport" = "La limite de %d partitions dans la version base de iRollMusic est atteinte. Les fichiers ne pouvaient pas être importés.\n\nPour une version illimitée veuillez abonner iRollMusic Pro dans notre boutique en ligne.";
+"ShowShopButtonTitle" = "Boutique en ligne";

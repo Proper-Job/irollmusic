@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropboxTransferListViewController">
+            <connections>
+                <outlet property="bottomToolbar" destination="KkG-Us-Ntd" id="Hsq-BK-RBX"/>
+                <outlet property="clearTransferListButton" destination="Mr5-D6-nCZ" id="pEz-Qa-fk2"/>
+                <outlet property="deleteButton" destination="oL9-sw-u5r" id="frm-R3-0l0"/>
+                <outlet property="startTransferButton" destination="zpT-M9-bHD" id="Szd-f6-W9h"/>
+                <outlet property="tableView" destination="qc8-Pl-D0k" id="Yyc-mh-BoZ"/>
+                <outlet property="titleLabel" destination="tuT-5D-Iso" id="9K6-kt-DQx"/>
+                <outlet property="transferVolumeLabel" destination="hKp-XX-rZ9" id="lsf-9U-8Um"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuT-5D-Iso" userLabel="Label - Title">
+                    <rect key="frame" x="8" y="8" width="288" height="25"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKp-XX-rZ9" userLabel="Label - Volume">
+                    <rect key="frame" x="304" y="8" width="288" height="25"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="qc8-Pl-D0k">
+                    <rect key="frame" x="0.0" y="41" width="600" height="515"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="45C-gH-Mlh"/>
+                        <outlet property="delegate" destination="-1" id="puh-cP-3w3"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkG-Us-Ntd">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Lux-96-HnJ"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="trash" id="oL9-sw-u5r">
+                            <connections>
+                                <action selector="deleteFileFromTransferListTapped" destination="-1" id="Bto-rt-ouH"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Clear" style="plain" id="Mr5-D6-nCZ">
+                            <connections>
+                                <action selector="clearTransferListTapped" destination="-1" id="244-4I-fiF"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="jvQ-CL-QiA"/>
+                        <barButtonItem title="Start" style="plain" id="zpT-M9-bHD"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tuT-5D-Iso" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Bv1-fr-8e8"/>
+                <constraint firstItem="KkG-Us-Ntd" firstAttribute="top" secondItem="qc8-Pl-D0k" secondAttribute="bottom" id="PK3-MS-vQt"/>
+                <constraint firstItem="hKp-XX-rZ9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="ZG3-SB-wd1"/>
+                <constraint firstAttribute="trailing" secondItem="qc8-Pl-D0k" secondAttribute="trailing" id="aKT-Kg-xVF"/>
+                <constraint firstAttribute="trailing" secondItem="hKp-XX-rZ9" secondAttribute="trailing" constant="8" id="aqB-Tg-BRT"/>
+                <constraint firstItem="hKp-XX-rZ9" firstAttribute="leading" secondItem="tuT-5D-Iso" secondAttribute="trailing" constant="8" id="dA7-Pe-T1U"/>
+                <constraint firstItem="KkG-Us-Ntd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="euo-oC-nex"/>
+                <constraint firstAttribute="bottom" secondItem="KkG-Us-Ntd" secondAttribute="bottom" id="k3m-mj-fOC"/>
+                <constraint firstItem="qc8-Pl-D0k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="leg-4K-fc5"/>
+                <constraint firstItem="tuT-5D-Iso" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="mEX-Oj-yMp"/>
+                <constraint firstItem="qc8-Pl-D0k" firstAttribute="top" secondItem="hKp-XX-rZ9" secondAttribute="bottom" constant="8" id="mJV-kd-REa"/>
+                <constraint firstAttribute="trailing" secondItem="KkG-Us-Ntd" secondAttribute="trailing" id="qI4-wZ-Az9"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

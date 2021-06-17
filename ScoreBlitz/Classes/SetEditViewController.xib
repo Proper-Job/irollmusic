@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetEditViewController">
+            <connections>
+                <outlet property="searchBar" destination="Iws-zJ-xP1" id="Avx-ry-j0A"/>
+                <outlet property="tableview" destination="89M-Ff-HNk" id="CdL-jx-Hwq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="960"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Iws-zJ-xP1">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="44"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="5FP-TO-Zcr"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="89M-Ff-HNk">
+                    <rect key="frame" x="0.0" y="44" width="384" height="916"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OsS-fW-kJP"/>
+                        <outlet property="delegate" destination="-1" id="JcD-fx-nsA"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="89M-Ff-HNk" firstAttribute="top" secondItem="Iws-zJ-xP1" secondAttribute="bottom" id="0Ya-is-DQC"/>
+                <constraint firstItem="89M-Ff-HNk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CNw-C8-aqH"/>
+                <constraint firstItem="Iws-zJ-xP1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="E0X-Sn-XWA"/>
+                <constraint firstAttribute="trailing" secondItem="Iws-zJ-xP1" secondAttribute="trailing" id="Gg6-wK-ocu"/>
+                <constraint firstItem="89M-Ff-HNk" firstAttribute="top" secondItem="Iws-zJ-xP1" secondAttribute="bottom" id="RYR-Zz-JCe"/>
+                <constraint firstItem="Iws-zJ-xP1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TOu-f0-vEG"/>
+                <constraint firstAttribute="bottom" secondItem="89M-Ff-HNk" secondAttribute="bottom" id="Tkc-MY-QVs"/>
+                <constraint firstAttribute="trailing" secondItem="89M-Ff-HNk" secondAttribute="trailing" id="XSJ-rk-rMQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

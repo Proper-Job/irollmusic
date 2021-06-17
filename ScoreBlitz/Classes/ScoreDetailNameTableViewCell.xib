@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScoreDetailNameTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="ScoreDetailNameTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UIo-NX-cjH">
+                        <rect key="frame" x="14" y="0.0" width="356" height="43"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZIh-QN-6Kz">
+                                <rect key="frame" x="14" y="0.0" width="36" height="43"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GJp-2e-p1J">
+                                <rect key="frame" x="64" y="0.0" width="278" height="43"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZIh-QN-6Kz" firstAttribute="leading" secondItem="UIo-NX-cjH" secondAttribute="leading" constant="14" id="Bti-og-M6E"/>
+                            <constraint firstAttribute="bottom" secondItem="GJp-2e-p1J" secondAttribute="bottom" id="QO0-wW-wr6"/>
+                            <constraint firstAttribute="trailing" secondItem="GJp-2e-p1J" secondAttribute="trailing" constant="14" id="c8v-h9-EiW"/>
+                            <constraint firstItem="GJp-2e-p1J" firstAttribute="leading" secondItem="ZIh-QN-6Kz" secondAttribute="trailing" constant="14" id="g7R-x7-GJJ"/>
+                            <constraint firstItem="GJp-2e-p1J" firstAttribute="leading" secondItem="ZIh-QN-6Kz" secondAttribute="trailing" constant="14" id="n6i-2d-jiP"/>
+                            <constraint firstItem="GJp-2e-p1J" firstAttribute="top" secondItem="UIo-NX-cjH" secondAttribute="top" id="q54-bd-kra"/>
+                            <constraint firstAttribute="bottom" secondItem="ZIh-QN-6Kz" secondAttribute="bottom" id="sou-sE-7nV"/>
+                            <constraint firstItem="ZIh-QN-6Kz" firstAttribute="top" secondItem="UIo-NX-cjH" secondAttribute="top" id="tUw-Cw-0sA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="UIo-NX-cjH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Lg3-01-ti1"/>
+                    <constraint firstItem="UIo-NX-cjH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="dfm-58-sut"/>
+                    <constraint firstAttribute="trailing" secondItem="UIo-NX-cjH" secondAttribute="trailing" constant="14" id="hWJ-RQ-QMb"/>
+                    <constraint firstAttribute="bottom" secondItem="UIo-NX-cjH" secondAttribute="bottom" constant="1" id="kV8-Ac-Da2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="ZIh-QN-6Kz" id="D2N-mH-Pmx"/>
+                <outlet property="nameTextField" destination="GJp-2e-p1J" id="AFM-rf-lV6"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

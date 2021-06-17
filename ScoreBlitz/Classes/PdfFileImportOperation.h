@@ -1,0 +1,13 @@
+//
+//  ScoreImportOperation.h
+//  ScoreBlitz
+//
+//  Created by Max Pfeiffer on 23.03.15.
+//
+//
+
+#import "FileImportOperation.h"
+
+@interface PdfFileImportOperation : FileImportOperation
+
+@end

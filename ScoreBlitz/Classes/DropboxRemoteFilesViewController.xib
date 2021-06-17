@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropboxRemoteFilesViewController">
+            <connections>
+                <outlet property="activityIndicatorView" destination="z1L-5Z-eaL" id="2wf-gV-SAq"/>
+                <outlet property="bottomToolbar" destination="1cQ-iR-kbE" id="4Or-M4-bb2"/>
+                <outlet property="deleteButton" destination="llV-L5-hON" id="F1Q-Pk-UbQ"/>
+                <outlet property="searchBar" destination="sXd-X8-ilk" id="Fxc-6s-vTl"/>
+                <outlet property="tableView" destination="WXv-Vg-27X" id="ASl-Pf-BPS"/>
+                <outlet property="titleLabel" destination="taf-9q-3jO" id="3F1-0A-bfO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taf-9q-3jO">
+                    <rect key="frame" x="8" y="8" width="584" height="25"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="sXd-X8-ilk">
+                    <rect key="frame" x="0.0" y="41" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Jue-Fj-aHR"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="9OL-wf-cji"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WXv-Vg-27X">
+                    <rect key="frame" x="0.0" y="85" width="600" height="471"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="orb-jn-nb0"/>
+                        <outlet property="delegate" destination="-1" id="RTW-N0-SOY"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cQ-iR-kbE">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="PGU-Lb-7LT"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="trash" id="llV-L5-hON">
+                            <connections>
+                                <action selector="deleteFileFromDropbox:" destination="-1" id="eC7-82-D7K"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Qk1-27-3Ke"/>
+                    </items>
+                </toolbar>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="z1L-5Z-eaL">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="JMA-kT-L9v"/>
+                        <constraint firstAttribute="width" constant="20" id="YrX-zX-TC0"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="z1L-5Z-eaL" secondAttribute="centerY" id="0mf-jy-lda"/>
+                <constraint firstAttribute="trailing" secondItem="WXv-Vg-27X" secondAttribute="trailing" id="9l6-XG-FJt"/>
+                <constraint firstAttribute="centerX" secondItem="z1L-5Z-eaL" secondAttribute="centerX" id="Anp-5b-bV6"/>
+                <constraint firstAttribute="trailing" secondItem="taf-9q-3jO" secondAttribute="trailing" constant="8" id="FW9-dN-GBC"/>
+                <constraint firstItem="1cQ-iR-kbE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KeF-rp-K7v"/>
+                <constraint firstItem="1cQ-iR-kbE" firstAttribute="top" secondItem="WXv-Vg-27X" secondAttribute="bottom" id="MYV-UY-iY0"/>
+                <constraint firstItem="sXd-X8-ilk" firstAttribute="top" secondItem="taf-9q-3jO" secondAttribute="bottom" constant="8" id="QLy-ko-RYm"/>
+                <constraint firstAttribute="bottom" secondItem="1cQ-iR-kbE" secondAttribute="bottom" id="UfF-AQ-1Fm"/>
+                <constraint firstItem="taf-9q-3jO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="VhD-x4-SML"/>
+                <constraint firstItem="taf-9q-3jO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="Z9e-T6-GTx"/>
+                <constraint firstAttribute="trailing" secondItem="sXd-X8-ilk" secondAttribute="trailing" id="aX9-Sq-dG2"/>
+                <constraint firstItem="sXd-X8-ilk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qgq-pV-GVB"/>
+                <constraint firstItem="WXv-Vg-27X" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rkE-A6-6oV"/>
+                <constraint firstAttribute="trailing" secondItem="1cQ-iR-kbE" secondAttribute="trailing" id="u4x-Dk-c1d"/>
+                <constraint firstItem="WXv-Vg-27X" firstAttribute="top" secondItem="sXd-X8-ilk" secondAttribute="bottom" id="uwi-cw-NRB"/>
+                <constraint firstItem="WXv-Vg-27X" firstAttribute="top" secondItem="taf-9q-3jO" secondAttribute="bottom" constant="8" id="wXJ-CV-s9e"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="wXJ-CV-s9e"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

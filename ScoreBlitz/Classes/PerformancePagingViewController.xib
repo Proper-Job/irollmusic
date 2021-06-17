@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PerformancePagingViewController">
+            <connections>
+                <outlet property="bottomToolbar" destination="Fp0-qE-Qj9" id="I9q-Zk-i4r"/>
+                <outlet property="performanceScrollView" destination="MlH-ZA-epy" id="yN5-DJ-dc3"/>
+                <outlet property="performanceScrollViewLeftConstraint" destination="V0K-OB-Em8" id="xuX-La-E9F"/>
+                <outlet property="performanceScrollViewRightConstraint" destination="LPr-eK-o7t" id="x2o-2b-0yb"/>
+                <outlet property="topToolbar" destination="bKj-bu-YVH" id="PCU-r6-Cb0"/>
+                <outlet property="topToolbarTopConstraint" destination="bCN-fA-Y1d" id="cpP-be-bb3"/>
+                <outlet property="view" destination="iN0-l3-epB" id="SmL-hW-9Di"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlH-ZA-epy">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Odg-rk-g14"/>
+                    </connections>
+                </scrollView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKj-bu-YVH" userLabel="Top Toolbar">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                    <items/>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fp0-qE-Qj9" userLabel="Bottom Toolbar">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <items/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.14117647059999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bKj-bu-YVH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="55Y-6u-Wse"/>
+                <constraint firstAttribute="trailing" secondItem="bKj-bu-YVH" secondAttribute="trailing" id="H1X-BE-opb"/>
+                <constraint firstAttribute="trailing" secondItem="MlH-ZA-epy" secondAttribute="trailing" id="LPr-eK-o7t"/>
+                <constraint firstAttribute="trailing" secondItem="Fp0-qE-Qj9" secondAttribute="trailing" id="O20-io-Jks"/>
+                <constraint firstItem="MlH-ZA-epy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="V0K-OB-Em8"/>
+                <constraint firstItem="bKj-bu-YVH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bCN-fA-Y1d"/>
+                <constraint firstAttribute="bottom" secondItem="MlH-ZA-epy" secondAttribute="bottom" id="bbI-tI-jGC"/>
+                <constraint firstAttribute="bottom" secondItem="Fp0-qE-Qj9" secondAttribute="bottom" id="cBb-Ht-v22"/>
+                <constraint firstItem="Fp0-qE-Qj9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lwX-zt-8Kh"/>
+                <constraint firstItem="MlH-ZA-epy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oof-Ln-Ivk"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="382" y="430"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

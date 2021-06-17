@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditorViewController">
+            <connections>
+                <outlet property="bottomToolbar" destination="33" id="34"/>
+                <outlet property="containerScrollView" destination="36" id="1qp-Oa-c3E"/>
+                <outlet property="topToolbar" destination="4" id="6"/>
+                <outlet property="topToolbarTopConstraint" destination="Yzh-BC-x2A" id="HAl-cV-2Su"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2" userLabel="View">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36" userLabel="Container View" customClass="EditorScrollView">
+                    <rect key="frame" x="0.0" y="44" width="768" height="936"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="38"/>
+                    </connections>
+                </scrollView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33" userLabel="Bottom Toolbar">
+                    <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="gaY-XF-z0t"/>
+                    </constraints>
+                    <items/>
+                </toolbar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4" userLabel="Top Toolbar">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NwU-zl-hwJ"/>
+                    </constraints>
+                    <items/>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" red="0.047058823530000002" green="0.14117647059999999" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="33" secondAttribute="trailing" id="Cyx-H7-Vsz"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="KNO-Hi-Mqe"/>
+                <constraint firstItem="33" firstAttribute="top" secondItem="36" secondAttribute="bottom" id="LNw-js-kSl"/>
+                <constraint firstItem="36" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="TPw-1o-h3B"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="2" secondAttribute="top" id="Yzh-BC-x2A"/>
+                <constraint firstItem="33" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="arp-nh-xby"/>
+                <constraint firstItem="36" firstAttribute="top" secondItem="4" secondAttribute="bottom" id="fYq-0B-7nc"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="2" secondAttribute="leading" id="qYR-Yo-Kpc"/>
+                <constraint firstAttribute="bottom" secondItem="33" secondAttribute="bottom" id="w6N-ri-PhF"/>
+                <constraint firstAttribute="trailing" secondItem="36" secondAttribute="trailing" id="xU1-NW-JJC"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,453 @@
+﻿/* 
+   Localizable.strings
+   ScoreBlitz
+
+   Created by Moritz Pfeiffer on 01.02.11.
+   Copyright 2011 Moritz Pfeiffer. All rights reserved.
+ 
+    Simplified
+    
+    quote too many on advancedPerformanceModeEnterMeasurePromptText
+    quote missing on importViewTitleLabelTextFinished
+    semicolon missing on penLineWidth
+ 
+    found it with ".+?"
+ */
+
+/******************************************
+ * iRate
+ ******************************************/
+
+"rateAlertViewTitle" = "请评价应用";
+"rateAlertViewMessage" = "你喜欢iRollMusic的话请写评价";
+"rateAlertViewCancelButton" = "不，谢谢";
+"rateAlertViewOkButton" = "评价应用";
+"rateAlertViewRemindButton" = "再次提醒";
+
+/******************************************
+ * Facebook
+ ******************************************/
+
+"facebookNameString" = "iRollMusic";
+"facebookCaptionString" = "把iPad用成数码乐谱架";
+"facebookDescriptionString" = "你不用再亲自动手翻页，iRollMusic是这方面的好帮手。用iRollMusic，你的乐谱可以随身携带，这样你随时可以跟朋友做轻松，愉悦的做Jam Session。";
+
+/******************************************
+ * CentralView
+ ******************************************/
+
+"centralViewLeftLabelScores" = "乐谱";
+"centralViewLeftLabelSets" = "播放列表";
+"centralViewLibraryButton" = "乐谱收集";
+"centralViewTutorialsButton" = "教程";
+"centralViewSettingsbutton" = "设置";
+
+"centralViewNewSetName" = "+ 新列表";
+
+/******************************************
+ * Performance View
+ ******************************************/
+
+"currentPageIndicator" = "%d 共 %d";
+
+"advancedPerformanceMode" = "滚动小节";
+"simplePerformanceMode" = "简单滚动";
+"pagingPerformanceMode" = "手动";
+
+"finishedPerformance" = "到达终点";
+"setPerformanceTempo" = "调速度";
+"choosePerformanceModePopoverTitle" = "播放方式";
+"simpleScrollSpeedSelectorSpeedLabel" = "速度";
+
+"showToolbarHelpViewText" = "显示菜单栏：用两个手指点显示器";
+"hideToolbarHelpViewText" = "隐藏菜单栏：用两个手指点显示器";
+
+"metronomeAudible" = "声音";
+"countInNumberOfBars" = "歌前数拍";
+"metronomeOptionsHeading" = "节拍器设置";
+
+/******************************************
+ * Editor
+ ******************************************/
+"editorTypeMeasures" = "小节";
+"editorTypeAnnotations" = "注释";
+"editorTypeStartMeasure" = "第一小节"; 
+
+"editMeasure" = "编辑小节";
+"multipleMeasurePropertyValues" = "多个数据\n点击拉伸改所有数据";
+"editMultipleMeasure" = "编辑多个小节";
+"deleteMarkers" = "删除多个标记";
+"deleteMarker" = "删除标记";
+
+"pressForMoreOptions" = "显示高级设置";
+"pressForLessOptions" = "隐藏高级设置";
+
+"daCapo" = "返始";
+
+// Labels
+"primaryEndingLabel" = "第一终点"; 
+"secondaryEndingLabel" = "第二终点"; 
+
+// AnnotationsView
+"drawAnnotationsButton" = "画";
+"typeAnnotationsButton" = "写";
+"eraseAnnotationsButton" = "橡皮";
+"clearAnnotationsButton" = "删除";
+"penAnnotationsButton" = "笔";
+
+"redColorName" = "红";
+"blueColorName" ="蓝";
+"greenColorName" = "绿";
+"purpleColorName" = "紫";
+"markerColorName" = "荧光笔";
+"blackColorName" = "黑";
+"whiteColorName" = "白";
+"penLineWidth" = "宽度";
+
+"confirmClearPageTitle" = "你确定要把所有注释删除吗?";
+
+"startMeasurePickerPrompt" = "选择第一小节";
+"editorTitlePrompt" = "点击小节标记\n点击标记改小节设置";
+
+"measureEditorTimeSignature" = "节拍"; 
+"measureEditorTempo" = "每分钟拍数";
+"measureEditorStartRepeat" = "返始起点";
+"measureEditorEndRepeat" = "返始终点";
+"measureEditorNumberOfPasses" = "返始次数";
+"measureEditorGoToCoda" = "To Coda";
+/******************************************
+ * Library View
+ ******************************************/
+
+
+// Toolbar items
+"libraryModelTypeScores" = "乐谱"; 
+"libraryModelTypeSets" = "播放列表";
+
+// Alertview for add Set
+"libraryAddSetListTitle" = "新列表";
+"libraryAddSetListTitleMessage" = "请输入列表名:";
+
+// Alertview for confirm deletes
+"confirmDeleteScoreTitle" = "你确定要把乐谱删除吗?";
+"confirmDeleteSetTitle" = "你确定要把列表删除吗?";
+
+// Tableviews
+"tableViewCellPlayTime" = "播放时间";
+"tableViewCellPlayTimeNotAvailableString" = "无资料";
+"tableViewNoSetMessage" = "请加播放列表";
+"noEntryLabelTitle" = "无条目";
+
+// ProgressIndicator
+"analysingProgress" = "在分析乐谱中";
+
+// Score Details Labels
+"scoreDetailNameLabel" = "曲";
+"scoreDetailComposerLabel" = "作曲家";
+"scoreDetailGenreLabel" = "类型";
+"scoreDetailPlaytimeLabel" = "播放时间";
+"scoreDetailMinLabel" = "分钟";
+"scoreDetailSecLabel" = "秒钟";
+"noPictureLabel" = "无预览图";
+"scoreDetailAutomaticCalculationLabel" = "自动计算";
+
+// List descriptions
+"scoreNamePlural" ="乐谱";
+"setNamePlural" = "播放列表";
+
+"setName" = "列表";
+
+/******************************************
+ * Score Manager
+ ******************************************/
+
+// Alertview for max scores reached
+"maxScoresReachedAlertViewTitle" = "乐谱限数已满";
+"maxScoresReachedAlertViewMessageImport" = "你的iRollMusic精简版的乐谱限数已满（%d 本乐谱），所以不能导入这本乐谱。\n点击确定买iRollMusic无限完整版。";
+"maxScoresReachedAlertViewMessageDocumentsFolder" = "你的iRollMusic精简版的乐谱限数已满（%d 本乐谱），所以不能导入所有乐谱。\n点击确定买iRollMusic无限完整版。";
+
+// Alertview for corrupt pdf files
+"corruptPdfFileAlertViewTitle" = "PDF文件错误";
+"corruptPdfFileAlertViewMessage" = "本PDF文件错误，已取消导入过程";
+
+/******************************************
+ * Settings View
+ ******************************************/
+
+"simpleModeScrollsContinuously" = "不断滚动";
+"showHelpers" = "显示功能"; 
+"settingEnablePagingTapZones" = "手触翻页区";
+"settingFlashPagingPageIndicator" = "点击手触翻页区显示页码";
+
+// Headings
+"settingsHeadingGeneralSettings" = "常规";
+
+"settingsScrollPositions" = "滚动位置";
+"settingsScrollPositionAutomatic" = "自动";
+"settingsScrollPositionTop" = "上";
+"settingsScrollPositionMiddle" = "中";
+"settingsScrollPositionBottom" = "下";
+
+/******************************************
+ * About View
+ ******************************************/
+
+"visualSupportLabel" = "设置";
+
+"feedbackDefaultMessage" = "请和我们联系吧";
+"feedBackThankYouMessage" = "信息发送成功。谢谢你的反馈";
+"feedBackSubmitFailedMessage" = "很抱歉，连接失败。信息已存，请你稍候再发送。";
+
+"feedbackButtonTitle" = "发送信息";
+
+"facebookButtonTitle" = "发出公告";
+
+"aboutUsDescriptiveText" = "感谢您购买iRollMusic。\n如果有任何建议和意见的话，请您给我们发信息，您的每一个建议和意见我们都会重视。我们会不断的进取与改进。感谢您对本产品的支持与认可。";
+
+"aboutUsDescriptiveTextLite" = "感谢您试用iRollMusic精简版，请您谅解容量的限制（只能加%d本乐谱）的缺点。\n您如购买完整版，可以轻松无限制。\n如果有任何建议和意见的话，请您给我们发信息，您的每一个建议和意见我们都会重视。我们会不断的进取与改进。感谢您对本产品的支持与认可。";
+
+/******************************************
+ * DropBox View
+ ******************************************/
+
+"dropboxSegmentTitle" = "Dropbox";
+"iRollMusicSegmentTitle" = "iRollmusic";
+
+"transferButtonStartTitle" = "开始移动";
+"transferButtonCancelTitle" = "取消移动";
+"clearTransferListButtonTitle" = "删除列表";
+
+"fileListLabelTextForDropBox" = "Dropbox里的文件";
+"fileListLabelTextForIrollmusic" = "iRollMusic里的乐谱";
+"transferListLabelText" = "要移动的文件";
+
+"transferToDropboxHeader" = "从iRollMusic到DropBox";
+"transferToIrollMusicHeader" = "从Dropbox到iRollMusic";
+
+"transferListOutboundCellIrmText" = "Irm";
+"transferListOutboundCellPdfText" = "Pdf";
+
+"clearTranferListAlertViewTitle" = "删除移动列表";
+"clearTranferListAlertViewMessage" = "把所有移动任务取消。你确定要删除移动列表吗？";
+
+"confirmDeleteFromDropboxAlertViewTitle" = "从Dropbox中删除";
+"confirmDeleteFromDropboxAlertViewMessage" = "你确定使用Dropbox把iRollMusic文件夹中的资料删除吗？";
+
+"transferCanceledText" = "移动已取消";
+"transferFailedText" = "移动错误";
+
+/******************************************
+ * ImportViewController
+ ******************************************/
+
+"importViewTitleLabelTextStarted" = "加载乐谱中，请稍后";
+"importViewTitleLabelTextFinished" = "加载成功";
+"importViewShowScoreInLibraryButton" = "在乐谱收集中显示出来";
+"importViewContinueButton" = "确定";
+"progressPageCountFormatString" = "第 %d 共 %d 页";
+"progressPageCountFormatStringShort" = "%d 共 %d";
+"progressCancelledText" = "取消 ...";
+
+/******************************************
+ * ExportDialogPopOverViewController
+ ******************************************/
+
+"exportOptionsTitle" = "导出设置";
+
+"fileExportTitle" = "导出文件";
+"exportDialogPdfAnnotationsSelector" = "注释";
+"exportDialogPdfFileButton" = "导出PDF文件";
+"exportDialogProprietaryFileButton" = "导出iRollMusic文件";
+
+"printerOptionsTitle" = "打印设置";
+"printDialogAnnotationsSelector" = "注释";
+"printDialogPrintModeSelector" = "横向";
+"printDialogPrintButton" = "打印";
+
+"dropboxAlertViewTitle" = "Dropbox文件移动";
+"dropboxAlertViewMessage" = "Dropbox和iRollMusic中移动文件的时候不能导出别的乐谱。";
+
+"wrongVersionAlertViewTitle" = "不兼容的文件版本";
+"wrongVersionAlertViewMessage" = "你尝试导入一个和iRollMusic最新版本相关的IRM文件. 请在App Store 首先更新iRollMusic 的最新版本再重新导入这个文件.";
+"SendMailFailedAlertViewTitle" = "邮件发送失败";
+"SendMailFailedAlertViewMessage" = "很抱歉邮件无法发送. 请重试.";
+
+/******************************************
+ * Buttons
+ ******************************************/
+
+"buttonOkay" = "确定";
+"buttonCancel" = "取消";
+"buttonDelete" = "删除";
+"buttonDone" = "完成";
+"buttonEdit" = "编辑";
+"buttontapToSetTempo" = "连续点击可调节拍器的速度";
+"buttonTapToPlay" = "开始";
+
+// SetList
+"addSetList" = "新建列表";
+
+// Setlist Details
+
+"addSetListEntryButton" = "新建乐谱";
+"addSetListEntryButtonPressed" = "完成";
+
+
+"buttonScorePicker" = "乐谱";
+"buttonChooseStartMeasure" = "第一小节";
+
+/******************************************
+ * Scores
+ ******************************************/
+
+"untitledScore" = "未命名";
+
+/******************************************
+ * Help Descriptions
+ ******************************************/
+"helpBarButtonTitle" = "?";
+"helpViewControllerTutorialButton" = "播放教程视频";
+
+// Paging
+"helpPagingPerformanceLeftTapZone" = "左手触翻页区";
+"helpPagingPerformanceRightTapZone" = "右手触翻页区";
+
+/******************************************
+ * Sign Annotations
+ ******************************************/
+"annotationCategoryArticulations" = "音乐衔接";
+"annotationCategoryDynamics" = "音响";
+"annotationCategoryFingerings" = "指法";
+"annotationCategoryOrnaments" = "装饰";
+"signAnnotationModeSign" = "符号";
+"signAnnotationModeColor" = "色调";
+"resetSizeButtonTitle" = "大小重置";
+
+/******************************************
+ * Tutorials
+ ******************************************/
+
+"tutorialDescriptionSimpleMode" = "教你如何\"简单滚动\"（英文）";
+"tutorialDescriptionAdvancedMode" = "教你如何使用滚动小节播放方式（英文）";
+"tutorialDescriptionPagingMode" = "教你如何使用手动翻页（英文）";
+"tutorialTitleMeasureEditor" = "小节编辑器";
+"tutorialDescriptionMeasureEditor" = "教你如何使用小节编辑器的各个功能（英文）";
+"tutorialTitleAnnotationsEditor" = "注解编辑器";
+"tutorialDescriptionAnnotationsEditor" = "教你怎样在乐谱使用键盘输入和手写注解（英文）";
+"tutorialTitleStartMeasureEditor" = "第一小节编辑器";
+"tutorialDescriptionStartMeasureEditor" = "教你怎样只播放乐谱的一个部分（英文）";
+"tutorialTitleImport" = "导入";
+"tutorialDescriptionImport" = "教你怎样导入文件（英文）";
+
+/******************************************
+ * 1.4.4
+ ******************************************/
+"visualMetronome" = "视觉";
+"settingRollByMeasureShowArrow" = "现在的小节用箭头标记";
+"analyzingAllScoresProgressViewTitle" = "所有乐谱将被分析";
+"powerSourceUnpluggedTitle" = "重要!";
+"powerSourceUnpluggedMessage" = "您的iPad没有连接电源. 这个程序进程有可能会持续较长时间.请在该程序继续超作之前给您的iPad 连接电源.";
+"buttonContinue" = "继续";
+"buttonAnalyzeAllScores" = "所有乐谱分析";
+"lowBatteryAbortAnalyzingAlertTitle" = "分析被中断!";
+"lowBatteryAbortAnalyzingAlertMessage" = "电视几乎耗尽. 请连接您的iPad 到电源并重新启动进程.";
+
+/******************************************
+ * Brach :: importexportupdate
+ ******************************************/
+"setListPdfRendererTimeString" = "时间";
+"emailExportTitle" = "邮件导出";
+"setExportDialogAttachSetlistPdfButton" = "播放列表以PDF文件形式进行附加";
+"setExportDialogAttachScoresPdfFilesButton" = "所有音符以PDF文件形式进行附加";
+"setExportDialogAttachIrmFileButton" = "播放列表以IRM文件形式进行附加";
+"setExportDialogSendEmailButton" = "邮件发送";
+"setExportDialogPrintSetButton" = "播放列表打印";
+"exportDialogEmailToLargeTitle" = "附件过大";
+"exportDialogEmailToLargeMessage" = "邮件附件超过20MB. 邮件因此不能发送.";
+
+// Movie names
+"simplePerformanceModeTutorialMovie" = "https://youtu.be/eMCyz1BgXlA";
+"advancedPerformanceModeTutorialMovie" = "https://youtu.be/hsem1J2rLFU";
+"pagingPerformanceModeTutorialMovie" = "https://youtu.be/1PZM9c-UES0";
+"annotationsEditorTutorialMovie" = "https://youtu.be/0NlDhi_aoMs";
+"measureEditorTutorialMovie" = "https://youtu.be/DmPmCoKZkRU";
+"startMeasureEditorTutorialMovie" = "startMeasureEditor_en";
+"importTutorialMovie" = "https://youtu.be/4R_ONnv01MA";
+
+
+/******************************************
+ * Help templates
+ ******************************************/
+"mainPagingHelpTemplate" = "paging_main_zh-Hans";
+"mainAdvancedScrollHelpTemplate" = "advanced_scroll_main_zh-Hans";
+"mainSimpleScrollHelpTemplate" = "simple_scroll_main_zh-Hans";
+"barHelpTemplateMeasureEditor" = "bar_measure_editor_zh-Hans";
+"barHelpTemplateModePicker" = "bar_mode_picker_zh-Hans";
+"barHelpTemplateAnnotationEditor" = "bar_annotation_editor_zh-Hans";
+"barHelpTemplateSettings" = "bar_settings_zh-Hans";
+"barHelpTemplateScorePicker" = "bar_score_picker_zh-Hans";
+"barHelpTemplatePreviousPage" = "bar_previous_page_zh-Hans";
+"barHelpTemplatePagePicker" = "bar_page_picker_zh-Hans";
+"barHelpTemplateNextPage" = "bar_next_page_zh-Hans";
+"barHelpTemplateTempoPicker" = "bar_tempo_picker_zh-Hans";
+"barHelpTemplateStartMeasure" = "bar_start_measure_zh-Hans";
+"barHelpTemplateAdvancedRewind" = "bar_advanced_rewind_zh-Hans";
+"barHelpTemplateStop" = "bar_stop_zh-Hans";
+"barHelpTemplateAdvancedPlay" = "bar_advanced_play_zh-Hans";
+"barHelpTemplateSimpleRewind" = "bar_simple_rewind_zh-Hans";
+"barHelpTemplateSimplePlay" = "bar_simple_play_zh-Hans";
+"popoverHelpTemplateBpm" = "measure_editor_bpm_zh-Hans";
+"barHelpTemplateEditorPicker" = "bar_editor_type_picker_zh-Hans";
+"barHelpTemplateAnnotationTools" = "bar_annotation_tools_zh-Hans";
+"barHelpTemplatePenAnnotation" = "bar_pen_annotation_zh-Hans";
+"barHelpTemplateDeleteAnnotations" = "bar_delete_annotations_zh-Hans";
+"mainAnnotationEditorHelpTemplate" = "annotation_editor_main_zh-Hans";
+"mainMeasureEditorHelpTemplate" = "measure_editor_main_zh-Hans";
+"mainStartMeasureEditorHelpTemplate" = "start_measure_editor_main_zh-Hans";
+"popoverHelpTemplateSignAnnotations" = "sign_annotation_zh-Hans";
+"barHelpTemplateEnterMeasurePrompt" = "bar_enter_measure_prompt_zh-Hans";
+"popoverHelpTemplatePlaytimeCalc" = "automatic_playtime_calc_zh-Hans";
+
+/******************************************
+ * V 2.0
+ ******************************************/
+
+"MultipleScoresAnalysingProgressMessage" = "乐谱将被进行分析";
+
+"FoundNewScoresAlertControllerTitle" = "找到的文件";
+"FoundNewScoresAlertControllerMessage" = "iRollMusic 找到文件在iTunes 文件夹中的文档文件里. 你想把它现在导入吗?";
+
+"ScoreActionTableViewControllerTitle" = "行动";
+"ScoreActionSectionTitleImport" = "导入";
+"CheckDocumentsDirectoryItemTitle" = "扫描iTunes 文件夹文档文件";
+"ScoreActionSectionTitleScores" = "乐谱";
+"DeleteAllScoresItemTitle" = "删除所有乐谱";
+"ScoreActionSectionTitleDropbox" = "Dropbox";
+"LinkDropboxItemTitle" = "连接到Dropbox 的账户";
+"UnlinkDropboxItemTitle" = "Dropbox 账户注销";
+
+"DeleteAllScoresAlertControllerTitle" = "删除所有乐谱";
+"DeleteAllScoresAlertControllerMessage" = "这个行动不能被撤销!\n\n你确定你真的要删除所有乐谱吗?";
+
+"ImportViewControllerSuccessMessage" = "导入成功完成";
+"ImportViewControllerFailureMessage" = "出现一个错误";
+
+"ScoreRotationTitleMessage" = "旋转乐谱";
+"ScoreRotationFailedMessage" = "旋转失败";
+
+"back" = "返回";
+
+"NewAboutUsDescriptiveText" = "非常感谢您使用iRollMusic.\n\n欢迎您的建议和要求. 请给我们留言.\n\n有关详细信息请点击 www.irollmusic.com.";
+
+"ShopViewControllerTitle" = "Shop";
+"ShopRestorePurchasesButtonTitle" = "恢复购买";
+"12monthIapItemTitle" = "iRollMusic Pro: 12个月\n无限制使用";
+"6monthIapItemTitle" = "iRollMusic Pro: 6个月\n无限制使用";
+"3monthIapItemTitle" = "iRollMusic Pro: 3个月\n无限制使用 ";
+"1monthIapItemTitle" = "iRollMusic Pro: 1个月\n无限制使用";
+"ShopManageSubscriptionsButtonTitle" = "预订管理";
+"ShopViewControllerValidSubscriptionMessage" = "已购买iRollMusic Pro 到%@";
+
+"maxScoresReachedAlertViewTitle" = "已经达到乐谱的最大容量";
+"maxScoresReachedAlertViewMessageImport" = "你已经达到iRollMusic 标准版本所限制%d 乐谱. 因此你的文件将不能被导入.\n\n为了能无限制的使用iRollMusic, 请在Shop购买 iRollMusic Pro.";
+"ShowShopButtonTitle" = "Shop 展示";

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Medium</string>
+        </mutableArray>
+        <mutableArray key="Helvetica.ttc">
+            <string>Helvetica</string>
+            <string>Helvetica</string>
+            <string>Helvetica-Bold</string>
+            <string>Helvetica</string>
+            <string>Helvetica</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultipleMeasureEditorViewController">
+            <connections>
+                <outlet property="bpmButton" destination="awV-mC-KJQ" id="qyl-LB-pYy"/>
+                <outlet property="bpmHelpButton" destination="49" id="eUC-Oh-zEJ"/>
+                <outlet property="deleteButton" destination="GEC-Xs-uu1" id="up0-dd-YsX"/>
+                <outlet property="firstEndingLabel" destination="13" id="40"/>
+                <outlet property="multiSelectionTimeLabel" destination="23" id="29"/>
+                <outlet property="primaryEndingSwitch" destination="14" id="36"/>
+                <outlet property="secondEndingLabel" destination="15" id="41"/>
+                <outlet property="secondaryEndingSwitch" destination="16" id="37"/>
+                <outlet property="timeLabelTopConstraint" destination="XEh-ln-xXr" id="WkW-DN-MwC"/>
+                <outlet property="timeSignatureLabel" destination="42" id="47"/>
+                <outlet property="timeSignaturePicker" destination="EDB-qC-rh1" id="zbn-Tj-qyg"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="44" width="320" height="434"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Time Signature" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="42" userLabel="Time Signature Label">
+                    <rect key="frame" x="8" y="8" width="304" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="05J-P4-Rdt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="0.29803921570000003" green="0.3294117647" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDB-qC-rh1">
+                    <rect key="frame" x="8" y="41" width="304" height="162"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="162" id="18s-Me-WZu"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jme-hB-k6F"/>
+                        <outlet property="delegate" destination="-1" id="cla-ev-Sj8"/>
+                    </connections>
+                </pickerView>
+                <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Multiple Selection" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="23" userLabel="Label - Multiple Selection Time" customClass="TouchAwareLabel">
+                    <rect key="frame" x="8" y="41" width="304" height="162"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awV-mC-KJQ" userLabel="Bpm button">
+                    <rect key="frame" x="8" y="224" width="274" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="SFC-dJ-vVk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <state key="normal" title="BPM" backgroundImage="petrol.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showBpmPopover:" destination="-1" eventType="touchUpInside" id="V7A-qc-XED"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49" userLabel="Bpm help button">
+                    <rect key="frame" x="290" y="235" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="L0k-tg-FF7"/>
+                        <constraint firstAttribute="width" constant="22" id="xiv-4q-k1x"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <color key="tintColor" red="0.10980392160000001" green="0.41568627450000001" blue="0.46274509800000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="showBpmHelpPopover:" destination="-1" eventType="touchUpInside" id="FNu-Wc-ecR"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="1. Ending" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="13" userLabel="Primary Ending Label">
+                    <rect key="frame" x="8" y="291" width="247" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="I1i-2A-qbU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="0.29803921570000003" green="0.3294117647" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="14" userLabel="Primary Ending Switch">
+                    <rect key="frame" x="263" y="288" width="51" height="31"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="9N5-cH-4uB"/>
+                        <constraint firstAttribute="height" constant="31" id="HV3-Dl-rAr"/>
+                    </constraints>
+                    <connections>
+                        <action selector="primaryEndingDidChange:" destination="-1" eventType="valueChanged" id="38"/>
+                    </connections>
+                </switch>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="2. Ending" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="15" userLabel="Secondary Ending Label">
+                    <rect key="frame" x="8" y="328" width="247" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="3cD-gp-xX4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="0.29803921570000003" green="0.3294117647" blue="0.42745098040000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="shadowColor" red="0.95686274510000002" green="0.96078431369999995" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <size key="shadowOffset" width="0.0" height="1"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="16" userLabel="Secondary Ending Switch">
+                    <rect key="frame" x="263" y="325" width="51" height="31"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="YbU-Ff-6jh"/>
+                        <constraint firstAttribute="width" constant="49" id="djS-mP-dOH"/>
+                    </constraints>
+                    <connections>
+                        <action selector="secondaryEndingDidChange:" destination="-1" eventType="valueChanged" id="39"/>
+                    </connections>
+                </switch>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEC-Xs-uu1" userLabel="Delete marker button">
+                    <rect key="frame" x="8" y="381" width="304" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ovo-iR-sva"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <state key="normal" title="Delete markers" backgroundImage="red.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="deleteMarkers" destination="-1" eventType="touchUpInside" id="WVo-eR-bTV"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="13" firstAttribute="centerY" secondItem="14" secondAttribute="centerY" id="1Tx-br-wvd"/>
+                <constraint firstAttribute="trailing" secondItem="14" secondAttribute="trailing" constant="8" id="27W-Wa-GyP"/>
+                <constraint firstItem="awV-mC-KJQ" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="7Sh-ko-JZI"/>
+                <constraint firstItem="EDB-qC-rh1" firstAttribute="top" secondItem="42" secondAttribute="bottom" constant="8" id="8kz-z2-WkU"/>
+                <constraint firstItem="GEC-Xs-uu1" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="8mu-l0-VAs"/>
+                <constraint firstItem="49" firstAttribute="leading" secondItem="awV-mC-KJQ" secondAttribute="trailing" constant="8" id="916-UO-fll"/>
+                <constraint firstItem="awV-mC-KJQ" firstAttribute="centerY" secondItem="49" secondAttribute="centerY" id="BHD-Kx-8lJ"/>
+                <constraint firstItem="EDB-qC-rh1" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="C31-zX-EwJ"/>
+                <constraint firstItem="15" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="JN0-t7-Hea"/>
+                <constraint firstItem="14" firstAttribute="leading" secondItem="13" secondAttribute="trailing" constant="8" id="MUv-gz-4Kl"/>
+                <constraint firstAttribute="trailing" secondItem="49" secondAttribute="trailing" constant="8" id="PEU-pD-bhc"/>
+                <constraint firstAttribute="bottom" secondItem="GEC-Xs-uu1" secondAttribute="bottom" constant="8" id="STN-Q0-K5p"/>
+                <constraint firstItem="16" firstAttribute="top" secondItem="14" secondAttribute="bottom" constant="6" id="Saz-yC-xlM"/>
+                <constraint firstItem="42" firstAttribute="top" secondItem="2" secondAttribute="top" constant="8" id="XEh-ln-xXr"/>
+                <constraint firstItem="16" firstAttribute="centerY" secondItem="15" secondAttribute="centerY" id="ZeO-XF-xIO"/>
+                <constraint firstItem="EDB-qC-rh1" firstAttribute="centerY" secondItem="23" secondAttribute="centerY" id="ae1-Bx-Gmu"/>
+                <constraint firstAttribute="trailing" secondItem="EDB-qC-rh1" secondAttribute="trailing" constant="8" id="cvF-E6-d1B"/>
+                <constraint firstItem="16" firstAttribute="leading" secondItem="15" secondAttribute="trailing" constant="8" id="hCS-ot-leh"/>
+                <constraint firstItem="42" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="jBb-nz-5XM"/>
+                <constraint firstAttribute="trailing" secondItem="GEC-Xs-uu1" secondAttribute="trailing" constant="8" id="kc0-ZZ-pyq"/>
+                <constraint firstItem="EDB-qC-rh1" firstAttribute="centerX" secondItem="23" secondAttribute="centerX" id="lJ6-Nj-R6T"/>
+                <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" constant="8" id="lNb-El-33q"/>
+                <constraint firstItem="EDB-qC-rh1" firstAttribute="width" secondItem="23" secondAttribute="width" id="mg8-TX-Ofd"/>
+                <constraint firstItem="EDB-qC-rh1" firstAttribute="height" secondItem="23" secondAttribute="height" id="odQ-fg-npQ"/>
+                <constraint firstItem="awV-mC-KJQ" firstAttribute="top" secondItem="23" secondAttribute="bottom" constant="21" id="ryL-jx-wFF"/>
+                <constraint firstAttribute="trailing" secondItem="42" secondAttribute="trailing" constant="8" id="vC9-q7-xYd"/>
+                <constraint firstItem="13" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="8" id="wCL-dx-ixE"/>
+                <constraint firstItem="14" firstAttribute="top" secondItem="awV-mC-KJQ" secondAttribute="bottom" constant="20" id="zAC-z0-BBw"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="299" y="437"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="petrol.png" width="1" height="1"/>
+        <image name="red.png" width="1" height="1"/>
+    </resources>
+</document>

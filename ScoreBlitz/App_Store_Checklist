@@ -1,0 +1,34 @@
+bundle identifier
+"ch.alp-phone.irollmusic"
+
+Code sign:
+Distribution "iRollMusic App Store"
+
+Product Name
+"iRollMusic"
+
+dropbox url scheme in plist
+Pro:
+"db-eo1zpc4iwkveyi8"
+
+Core Plot: set ENABLE_STRICT_OBJC_MSGSEND to NO
+
+Flags
+Debug comment out
+APP_DEBUG 0
+Copysampledata on
+Copysamplepdfs on
+NumberOfSampleScores 5
+
+Environment variables
+Zombies off
+Stack logging off
+
+Compile for device not simulator
+
+Version number
+
+Archive scheme
+Distribution
+
+Clean

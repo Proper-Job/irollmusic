@@ -1,0 +1,76 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.2.0)
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CorePlot (1.6)
+  - ISO8601 (0.3.0)
+  - JGMethodSwizzler (2.0.1)
+  - MZAppearance (1.1.6)
+  - MZFormSheetPresentationController (1.1.2):
+    - JGMethodSwizzler
+    - MZAppearance
+  - ObjectiveDropboxOfficial (3.2.0)
+  - PureLayout (3.0.2)
+  - TTTAttributedLabel (2.0.0)
+  - ZipKit (1.0.3)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0 (= 2.2.0)
+  - AFNetworking (= 2.6.0)
+  - CorePlot (= 1.6)
+  - ISO8601 (= 0.3.0)
+  - MZFormSheetPresentationController (= 1.1.2)
+  - ObjectiveDropboxOfficial (= 3.2.0)
+  - PureLayout (= 3.0.2)
+  - TTTAttributedLabel (= 2.0.0)
+  - ZipKit (= 1.0.3)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - AFNetworking
+    - CorePlot
+    - ISO8601
+    - JGMethodSwizzler
+    - MZAppearance
+    - MZFormSheetPresentationController
+    - ObjectiveDropboxOfficial
+    - PureLayout
+    - TTTAttributedLabel
+    - ZipKit
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: d11a4c12c6aaf704b8a3f56d179198c99f3e41e6
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
+  CorePlot: 820901f6c147f2d84549ffa1f0902869f980d74d
+  ISO8601: 8d8a22d5edf0554a1cf75bac028c76c1dc0ffaef
+  JGMethodSwizzler: e0ea5c1c6c55304ec4ef3f54e441400c6735c899
+  MZAppearance: 0c06d3fa9cc55142f1da14bc8631fbe8fd6e19d5
+  MZFormSheetPresentationController: 2e848d89c0741aef554d0ae6b138be5dc25a479f
+  ObjectiveDropboxOfficial: 5f690e26ee7f8ec247c7259cd011d1ae41780285
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  ZipKit: 594735e7ad2fd3ee7349759681a0423a1b296572
+
+PODFILE CHECKSUM: fb5d85c5f25b3bcd9055c76ab5349f74c0d18be6
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DropboxScoreListViewController">
+            <connections>
+                <outlet property="bottomToolbar" destination="lCz-UJ-9i7" id="bsJ-ap-t1h"/>
+                <outlet property="searchBar" destination="ipb-zK-Crc" id="wqN-Fw-43u"/>
+                <outlet property="tableView" destination="aWi-Oc-uAg" id="37f-hI-tze"/>
+                <outlet property="titleLabel" destination="y0q-rh-QwR" id="svN-Sr-4HR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="aWi-Oc-uAg">
+                    <rect key="frame" x="0.0" y="85" width="600" height="471"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BRN-cz-GF4"/>
+                        <outlet property="delegate" destination="-1" id="BzA-v5-xeV"/>
+                    </connections>
+                </tableView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lCz-UJ-9i7">
+                    <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="oAV-5Z-y2E"/>
+                    </constraints>
+                    <items/>
+                </toolbar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0q-rh-QwR">
+                    <rect key="frame" x="8" y="8" width="584" height="25"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ipb-zK-Crc">
+                    <rect key="frame" x="0.0" y="41" width="600" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aMI-Ic-FUx"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Lsx-y2-TNB"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="y0q-rh-QwR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="32D-GZ-bbw"/>
+                <constraint firstItem="aWi-Oc-uAg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FeA-mU-iXr"/>
+                <constraint firstAttribute="trailing" secondItem="lCz-UJ-9i7" secondAttribute="trailing" id="MQ1-Q0-fIH"/>
+                <constraint firstAttribute="trailing" secondItem="aWi-Oc-uAg" secondAttribute="trailing" id="NvW-6V-Duj"/>
+                <constraint firstItem="lCz-UJ-9i7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qy4-yg-vTX"/>
+                <constraint firstItem="ipb-zK-Crc" firstAttribute="top" secondItem="y0q-rh-QwR" secondAttribute="bottom" constant="8" id="Us8-9k-AuN"/>
+                <constraint firstAttribute="trailing" secondItem="ipb-zK-Crc" secondAttribute="trailing" id="bvZ-Y4-cRh"/>
+                <constraint firstItem="ipb-zK-Crc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fqT-ak-5UH"/>
+                <constraint firstAttribute="trailing" secondItem="y0q-rh-QwR" secondAttribute="trailing" constant="8" id="kou-Dn-o86"/>
+                <constraint firstItem="lCz-UJ-9i7" firstAttribute="top" secondItem="aWi-Oc-uAg" secondAttribute="bottom" id="mga-LN-VRf"/>
+                <constraint firstAttribute="bottom" secondItem="lCz-UJ-9i7" secondAttribute="bottom" id="s2h-58-zJ5"/>
+                <constraint firstItem="aWi-Oc-uAg" firstAttribute="top" secondItem="ipb-zK-Crc" secondAttribute="bottom" id="yeg-Xe-DhT"/>
+                <constraint firstItem="y0q-rh-QwR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="ymX-W2-vXO"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+    </objects>
+</document>
